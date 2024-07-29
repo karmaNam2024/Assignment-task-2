@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    background: #b4a1a1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 100px;
+}
+
+nav .logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.menu_btn{
+    color: #b4a1a1 ;
+}
+
+.fas--fa-bars{
+    color: #b4a1a1;
+    font-size: 23px;
+    display: none;
+}
+#click {
+    display: none;
+}
+
+nav ul {
+     display: flex; 
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 30px;
+    font-size: 20px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 0px 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border: 1px solid #fff;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+} 
+#about_karma{
+    background-image: url(/karma.jpg);
+    height: 60vh;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     color:#f8f7fa;
+     display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+#about_karma h2{
+    padding: 400px 10px 10px 40px;
+}
+#about_karma p{
+    padding: 40px;
+    color: rgb(245, 244, 247);
+}
+
+.Skills img{
+    width: 30%;
+}
+
+.Skills h1{
+    text-align: center;
+    padding: 40px;
+    font-size: 800;
+    font-weight: 30px;
+}
+
+.img_one{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.img_two{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.img_three{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.img4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+}
+.contact{
+    text-align: center;
+}
+.empty_div{
+    width: 100% ;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+    
+    
+    /* Media Query */
+    @media (max-width: 768px) {
+        nav .logo {
+            color: #fff;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    
+        .fas--fa-bars {
+            display: block;
+            cursor: pointer;
+        }
+    
+        nav ul {
+            list-style: none;
+            position: fixed;
+            top: -100%;
+            left: 0px;
+            background-color: #fff;
+            height: 35vh;
+            width: 100%;
+            display: block;
+            text-align: center;
+            transition: 1s ease-in;
+            opacity: 0.6;
+        }
+        
+        .menu_btn{
+            color: #000;
+            font-size: 25px;
+            font-weight: 800;
+        }
+    
+        #click:checked ~ ul {
+            top: 80px;
+        }
+    
+        nav ul li {
+            margin: 0 30px;
+            font-size: 25px;
+            margin: 40px 0;
+        }
+    
+        nav ul li a {
+            color: #000;
+            font-size: 30px;
+            font-weight: 900;
+            text-decoration: none;
+            transition: 1s;
+            padding: 0px 5px;
+        }
+    
+        nav ul li a:hover,
+        nav ul li a.active {
+            border: 1px solid #fff;
+            color: black;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    .about_karma h2{
+        color: #000;
+    }
+    .Skills .img_one {
+        background-color: #f1eded;
+        transition: 0.5s ease;
+        padding: 10px;
+    } 
+    .Skills .img_two{
+        background-color: #cbd4d8;
+        transition: 0.10s ease;
+        padding: 10px;
+    }
+    .Skills .img_three{
+        background-color: #c4e0d9;
+        transition: 0.15s ease;
+        padding: 10px;
+    }
+    .Skills .img4{
+        background-color: #b5b99a;
+        transition: 0.20s ease;
+        padding: 10px;
+    }
+    .empty_div{
+        background-color: aliceblue;
+    }
+}
+ 
+
+@media (min-width:768px)and(max-width:1028px) {
+    .nav{
+        width: 100%;
+        height: 80px;
+    }
+    .contact{
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
